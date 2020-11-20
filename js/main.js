@@ -17,6 +17,7 @@ let bodyclass = document.querySelector('.body');
 const btnOff = document.querySelector('.okeyButton');
 const btnOff2 = document.querySelector('.xButton');
 const btnOff3 = document.querySelector('.cancelButton');
+const overlay = document.querySelector('.overlay');
 
 (function clickButtonsOff() {
     btnOff.addEventListener('click', function off() {
@@ -32,6 +33,12 @@ const btnOff3 = document.querySelector('.cancelButton');
 })();
 (function clickButtonsOff() {
     btnOff3.addEventListener('click', function off() {
+        document.querySelector('.modal').style.display = 'none';
+        bodyclass.className = 'body';
+    });
+})();
+(function clickButtonsOff() {
+    overlay.addEventListener('click', function off() {
         document.querySelector('.modal').style.display = 'none';
         bodyclass.className = 'body';
     });
