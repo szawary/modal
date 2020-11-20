@@ -1,5 +1,5 @@
 body{
-    padding: 0px 20px 10px 20px;
+    padding: 0% 2%;
     text-align: justify;
 }
 .modalfooter {
@@ -42,8 +42,8 @@ body{
 .modal {
     position: absolute;
     display: none;
-    top: 50%;
-    left: 50%;
+    top: 30%;
+    left: 24%;
     background-color: rgb(248, 247, 247);
     text-align: justify;
     padding: 15px;
@@ -53,17 +53,18 @@ body{
 }
 
 @media only screen and (max-width: 560px) {
-    .flex-container {
-        display: flex;
-    }
-
     .modal {
+        box-sizing: border-box;
+        position: absolute;
+        display: none;
+        top: 30%;
+        left: 2%;
         background-color: rgb(248, 247, 247);
         text-align: justify;
         padding: 15px;
-        width: 100%;
-    
-    
+        width: 96%;
+        border-radius: 5px;
+        border: 1px solid rgb(160, 160, 160);
     }   
     
 }
