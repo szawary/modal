@@ -1,0 +1,45 @@
+.flex-container {
+    display: flex;
+}
+
+.flex-left {
+    background-color: rgb(106, 106, 107);
+    width: 25%;
+}
+
+.flex-right {
+    background-color: rgb(29, 123, 160);
+    width: 25%;
+}
+
+.flex-main {
+    background-color: rgb(163, 81, 81);
+    text-align: justify;
+    padding: 15px;
+    width: 50%;
+}
+
+@media only screen and (max-width: 560px) {
+    .flex-container {
+        display: flex;
+    }
+
+    .flex-left {
+        background-color: rgb(106, 106, 107);
+        width: 0%;
+    }
+    
+    .flex-right {
+        background-color: rgb(29, 123, 160);
+        width: 0%;
+    }
+    .flex-main {
+        background-color: rgb(163, 81, 81);
+        text-align: justify;
+        padding: 15px;
+        width: 100%;
+    
+    
+    }   
+    
+}
