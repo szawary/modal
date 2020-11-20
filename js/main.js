@@ -3,10 +3,11 @@
 // Turn on the modal
 
 const btn = document.querySelector('.modalButton');
-
+let bodyclass = document.querySelector('.body');
 (function clickButton() {
     btn.addEventListener('click', function on() {
         document.querySelector('.modal').style.display = 'block';
+        bodyclass.className = 'overlay';
     });
 })();
 
@@ -20,16 +21,19 @@ const btnOff3 = document.querySelector('.cancelButton');
 (function clickButtonsOff() {
     btnOff.addEventListener('click', function off() {
         document.querySelector('.modal').style.display = 'none';
+        bodyclass.className = 'body';
     });
 })();
 (function clickButtonsOff() {
     btnOff2.addEventListener('click', function off() {
         document.querySelector('.modal').style.display = 'none';
+        bodyclass.className = 'body';
     });
 })();
 (function clickButtonsOff() {
     btnOff3.addEventListener('click', function off() {
         document.querySelector('.modal').style.display = 'none';
+        bodyclass.className = 'body';
     });
 })();
 
