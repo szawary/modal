@@ -11,7 +11,6 @@ let bodyclass = document.querySelector('.body');
     });
 })();
 
-
 // Turn off the modal
 
 const btnOff = document.querySelector('.okeyButton');

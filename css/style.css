@@ -1,6 +1,7 @@
 .body{
     padding: 0% 2%;
     text-align: justify;
+    transition: .3s;
 }
 
 .overlay {
@@ -13,6 +14,7 @@
     bottom: 0;
     background-color: rgba(0,0,0,0.5);
     cursor: cell;
+    transition: .3s;
 }
 
 .modalHeader, .modalFooter {
