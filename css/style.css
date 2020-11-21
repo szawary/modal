@@ -2,6 +2,8 @@
     padding: 0% 2%;
     text-align: justify;
     transition: .3s;
+    z-index: 1;
+    position: relative;
 }
 
 .overlay {
@@ -15,6 +17,7 @@
     background-color: rgba(0,0,0,0.5);
     cursor: cell;
     transition: .3s;
+    z-index: 500;
 }
 
 .modalHeader, .modalFooter {
@@ -71,6 +74,7 @@
     width: 50%;
     border-radius: 5px;
     border: 1px solid rgb(160, 160, 160);
+    z-index: 999;
 }
 
 @media only screen and (max-width: 560px) {
