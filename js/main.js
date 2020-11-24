@@ -2,14 +2,16 @@
 
 // Turn on the modal
 
-const btn = document.querySelector('.modalButton');
+const btn = document.querySelector('.content__button');
+
 let bodyclass = document.querySelector('.noOverlay');
+const overlay = document.querySelector('.overlay');
+
 (function clickButton() {
     btn.addEventListener('click', function on() {
         document.querySelector('.modal').style.display = 'block';
         bodyclass.className = 'overlay';
     });
-    const overlay = document.querySelector('.overlay');
 })();
 
 // Turn off the modal

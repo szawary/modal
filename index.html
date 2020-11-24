@@ -9,13 +9,13 @@
 </head>
 
 <body>
-    <div class="body">
-        <header class="header">
+    <div class="content">
+        <header class="content__header">
             <h1>
                 This is an modal
             </h1>
         </header>
-        <main class="main">
+        <main class="content__main">
             <section>
                 <article class="lorem">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ducimus laboriosam
@@ -55,8 +55,8 @@
                     </p>
                 </article>
             </section>
-            <section class="buttonSection">
-                <button class="modalButton">Turn on the modal</button>
+            <section class="content__buttonSection">
+                <button class="content__button">Turn on the modal</button>
             </section>
             <section>
                 <article class="lorem">
@@ -100,32 +100,34 @@
 
         </main>
     </div>
-    <div class='noOverlay'></div>
-    <section class="modal">
-        <header>
-            <div class="modalHeader">
-                <button class='xButton'>X</button>
-            </div>
-            <div>
-                <h2>CSSScript.com</h2>
-            </div>
-        </header>
-        <article class="lorem">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ducimus laboriosam
-                alias nostrum doloremque iusto in porro! Nostrum quia nesciunt, porro facilis sed laboriosam
-                temporibus perferendis repudiandae accusantium, tempora explicabo? Lorem ipsum dolor sit
-                amet consectetur adipisicing elit. Odit accusamus id, nam, ullam optio exercitationem
-                perferendis alias harum pariatur, dicta tempora impedit! Eligendi deleniti facilis
-                similique libero ut accusantium harum. Lorem ipsum dolor sit amet consectetur adipisicing
-                elit. Pariatur, repellendus modi unde veniam suscipit sed magnam soluta repudiandae odit
-                hic velit rerum excepturi vero aliquid libero tempore. Iure, corrupti soluta.
-            </p>
-        </article>
-        <footer class="modalFooter">
-            <button class="cancelButton">Cancel</button>
-            <button class="okeyButton">Okey</button>
-        </footer>
-    </section>
+    <div class="modal">
+        <section class="modal__content">
+            <header>
+                <div class="modal__header">
+                    <button>X</button>
+                </div>
+                <div>
+                    <h2>CSSScript.com</h2>
+                </div>
+            </header>
+            <article class="lorem">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ducimus laboriosam
+                    alias nostrum doloremque iusto in porro! Nostrum quia nesciunt, porro facilis sed laboriosam
+                    temporibus perferendis repudiandae accusantium, tempora explicabo? Lorem ipsum dolor sit
+                    amet consectetur adipisicing elit. Odit accusamus id, nam, ullam optio exercitationem
+                    perferendis alias harum pariatur, dicta tempora impedit! Eligendi deleniti facilis
+                    similique libero ut accusantium harum. Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Pariatur, repellendus modi unde veniam suscipit sed magnam soluta repudiandae odit
+                    hic velit rerum excepturi vero aliquid libero tempore. Iure, corrupti soluta.
+                </p>
+            </article>
+            <footer class="modal__footer">
+                <button class="cancelButton">Cancel</button>
+                <button class="okayButton">Okey</button>
+            </footer>
+        </section>
+        <div class='overlay'></div>
+    </div>
 
 
 
