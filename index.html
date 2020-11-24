@@ -100,11 +100,12 @@
 
         </main>
     </div>
-    <div class="modal">
+    <div class="modal" tabindex="-1">
+        <div class="modal__overlay"></div>
         <section class="modal__content">
             <header>
                 <div class="modal__header">
-                    <button>X</button>
+                    <button class="xButton" tabindex="1">X</button>
                 </div>
                 <div>
                     <h2>CSSScript.com</h2>
@@ -122,11 +123,10 @@
                 </p>
             </article>
             <footer class="modal__footer">
-                <button class="cancelButton">Cancel</button>
-                <button class="okayButton">Okey</button>
+                <button class="cancelButton" tabindex="3">Cancel</button>
+                <button class="okayButton" tabindex="2">Okey</button>
             </footer>
         </section>
-        <div class='overlay'></div>
     </div>
 
 

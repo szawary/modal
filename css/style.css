@@ -1,9 +1,8 @@
 /* Body class */
 
-.body{
+body{
     padding: 0% 2%;
     text-align: justify;
-    position: relative;
 }
 
 .content__buttonSection {
@@ -21,28 +20,19 @@
     vertical-align: middle;
 }
 
-/* overlay réteg */
-
-.noOverly {
-    transition: .3s;
-    z-index: 1;
-}
-
-.overlay {
-    padding: 0% 2%;
-    text-align: justify;
+/* modal class */
+.modal__overlay {
+    background-color:rgba(0,0,0,0.05);
+    display: block;
     position: fixed;
-    top: 0;
+    width: 100%;
+    height: 100%;
+    top:0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,0.5);
-    cursor: cell;
-    transition: .3s;
-    z-index: 500;
+    z-index: 5;
 }
-
-/* modal class */
 
 .modal__header, .modal__footer {
     display: flex;
@@ -52,7 +42,10 @@
 .modal__footer {
     display: flex;
     align-items: center;
-    justify-content: center;
+
+}
+.okayButton:focus, .cancelButton:focus, .xButton:focus{
+    font-weight: bold;
 }
 
 .okayButton {
