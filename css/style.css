@@ -1,9 +1,12 @@
 .body{
     padding: 0% 2%;
     text-align: justify;
+    position: relative;
+}
+
+.noOverly {
     transition: .3s;
     z-index: 1;
-    position: relative;
 }
 
 .overlay {
